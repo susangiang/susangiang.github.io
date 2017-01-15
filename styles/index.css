@@ -1,4 +1,7 @@
 /* =======================================================
+Colors
+======================================================= */
+/* =======================================================
 Font Face
 ======================================================= */
 @font-face {
@@ -58,7 +61,7 @@ Utility classes
     display: none; } }
 
 /* =======================================================
-Document
+Hero
 ======================================================= */
 a {
   text-decoration: none; }
@@ -96,7 +99,7 @@ a {
   text-align: center;
   line-height: 1.4;
   letter-spacing: 0.4px;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
   padding: 0 10px;
   font-weight: lighter;
   max-width: 500px; }
@@ -104,29 +107,54 @@ a {
 .landing-links__container {
   display: flex; }
 
-.landing-links__container a,
-.landing-links__container a:visited {
-  color: #454545;
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0 12px;
-  text-transform: uppercase; }
+/* =======================================================
+Social Media Icons
+======================================================= */
+.social-icon {
+  text-indent: -9999px;
+  display: block;
+  margin: 0 30px;
+  width: 30px;
+  height: 30px;
+  background-size: contain; }
 
-.landing-links__container a:hover,
-.landing-links__container a:active {
-  color: #f58c86;
-  cursor: pointer; }
+.resume-icon {
+  background: url(../images/svg/resume.svg) no-repeat center; }
 
+.behance-icon {
+  background: url(../images/svg/behance.svg) no-repeat center; }
+
+.dribbble-icon {
+  background: url(../images/svg/dribbble.svg) no-repeat center; }
+
+.instagram-icon {
+  background: url(../images/svg/instagram.svg) no-repeat center; }
+
+.linkedin-icon {
+  background: url(../images/svg/linkedin.svg) no-repeat center; }
+
+/* =======================================================
+Project Container
+======================================================= */
 .projects-container {
   display: flex;
   flex-flow: column; }
 
+.project-content {
+  display: none; }
+
 .project-container {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  color: white;
-  height: 400px; }
+  color: #fff;
+  background-repeat: no-repeat;
+  height: 350px; }
+  .project-container:hover .project-content {
+    display: block;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center; }
 
 .project-name {
   font-size: 30px;
@@ -139,18 +167,18 @@ a {
   margin-bottom: 40px; }
 
 .project-divider {
-  border: solid 1px #ffffff;
+  border: solid 1px #fff;
   width: 69px;
   margin-top: 20px;
   margin-bottom: 22px; }
 
 .project-container button {
-  border: solid 2px #ffffff;
+  border: solid 2px #fff;
   background-color: Transparent;
   border-radius: 5px;
   box-shadow: none;
   cursor: pointer;
-  color: white;
+  color: #fff;
   font-size: 20px;
   outline: none;
   height: 40px;
@@ -159,37 +187,32 @@ a {
 .project-container button:hover {
   background-color: #fff; }
 
-.project-1 {
-  background-color: #f58c86; }
+.project--sprout-background {
+  background-image: url("../images/background/sprout_banner.jpg"); }
 
-.project-1 button:hover {
-  background-color: #fff;
+.project--air_miles-background {
+  background-image: url("../images/background/air_miles_banner.jpg"); }
+
+.project--ibm-background {
+  background-image: url("../images/background/ibm_banner.jpg"); }
+
+.project--go_green-background {
+  background-image: url("../images/background/go_green_banner.jpg"); }
+
+.project--personal-background {
+  background-image: url("../images/background/personal_banner.jpg"); }
+
+.project--sprout-background button:hover {
+  color: #2ebe68; }
+
+.project--air_miles-background button:hover {
+  color: #74cdef; }
+
+.project--ibm-background button:hover {
+  color: #1f57a4; }
+
+.project--go_green-background button:hover {
   color: #f58c86; }
 
-.project-2 {
-  background-color: #9fd6bd; }
-
-.project-2 button:hover {
-  background-color: #fff;
-  color: #9fd6bd; }
-
-.project-3 {
-  background-color: #f8c294; }
-
-.project-3 button:hover {
-  background-color: #fff;
-  color: #f8c294; }
-
-.project-4 {
-  background-color: #f2e4a0; }
-
-.project-4 button:hover {
-  background-color: #fff;
-  color: #f2e4a0; }
-
-.project-5 {
-  background-color: #73cdee; }
-
-.project-5 button:hover {
-  background-color: #fff;
-  color: #73cdee; }
+.project--personal-background button:hover {
+  color: #000; }
