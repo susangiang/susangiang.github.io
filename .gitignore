@@ -1,0 +1,6 @@
+app
+dist
+node_modules
+.DS_Store
+gulpfile.js
+package.json
