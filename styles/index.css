@@ -147,8 +147,7 @@ Project Container
   color: #fff;
   background-repeat: no-repeat;
   height: 350px;
-  width: 1440px;
-  background-size: contain; }
+  background-size: cover; }
   .project-container:hover .project-content {
     display: block;
     height: inherit;
@@ -157,6 +156,21 @@ Project Container
     display: flex;
     flex-flow: column;
     align-items: center; }
+
+.project--sprout-background {
+  background-image: url("../images/background/sprout_banner.jpg"); }
+
+.project--air_miles-background {
+  background-image: url("../images/background/air_miles_banner.jpg"); }
+
+.project--ibm-background {
+  background-image: url("../images/background/ibm_banner.jpg"); }
+
+.project--go_green-background {
+  background-image: url("../images/background/go_green_banner.jpg"); }
+
+.project--personal-background {
+  background-image: url("../images/background/personal_banner.jpg"); }
 
 .project-name {
   font-size: 30px;
@@ -188,21 +202,6 @@ Project Container
 
 .project-container button:hover {
   background-color: #fff; }
-
-.project--sprout-background {
-  background-image: url("../images/background/sprout_banner.jpg"); }
-
-.project--air_miles-background {
-  background-image: url("../images/background/air_miles_banner.jpg"); }
-
-.project--ibm-background {
-  background-image: url("../images/background/ibm_banner.jpg"); }
-
-.project--go_green-background {
-  background-image: url("../images/background/go_green_banner.jpg"); }
-
-.project--personal-background {
-  background-image: url("../images/background/personal_banner.jpg"); }
 
 .project--sprout-background button:hover {
   color: #2ebe68; }
