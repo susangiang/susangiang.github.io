@@ -146,7 +146,9 @@ Project Container
 .project-container {
   color: #fff;
   background-repeat: no-repeat;
-  height: 350px; }
+  height: 350px;
+  width: 1440px;
+  background-size: contain; }
   .project-container:hover .project-content {
     display: block;
     height: inherit;
