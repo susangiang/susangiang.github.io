@@ -93,10 +93,16 @@ a {
   text-align: center;
   margin: 0;
   padding: 0; }
+  @media screen and (min-width: 0) and (max-width: 46.8125em) {
+    .landing-name {
+      font-size: 100px; } }
 
 .landing-title {
   font-size: 22px;
   text-align: center; }
+  @media screen and (min-width: 0) and (max-width: 46.8125em) {
+    .landing-title {
+      font-size: 30px; } }
 
 .landing-divider {
   border: solid 1px #454545;
@@ -125,6 +131,12 @@ Social Media Icons
   width: 80px;
   height: 80px;
   background-size: contain; }
+  @media screen and (min-width: 0) and (max-width: 46.8125em) {
+    .social-icon {
+      display: inline-block;
+      margin: 0 20px;
+      width: 30px;
+      height: 50px; } }
 
 .resume-icon {
   background: url(../images/svg/resume.svg) no-repeat center; }
@@ -157,14 +169,28 @@ Project Container
   height: 350px;
   background-size: cover;
   background-position: center; }
-  .project-container:hover .project-content {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center; }
+  @media screen and (min-width: 61.875em) {
+    .project-container:hover .project-content {
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center; } }
+  @media screen and (min-width: 0) and (max-width: 61.8125em) {
+    .project-container .project-content {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center; } }
+  @media screen and (min-width: 0) and (max-width: 46.8125em) {
+    .project-container {
+      height: 500px; } }
 
 .project--sprout-background {
   background-image: url("../images/background/sprout_banner.jpg"); }
