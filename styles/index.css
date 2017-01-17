@@ -85,6 +85,9 @@ a {
   flex-flow: column;
   align-items: center;
   margin: 67.5px 0; }
+  @media screen and (min-width: 0) and (max-width: 46.8125em) {
+    .landing {
+      margin: 45px 0; } }
 
 .landing-name {
   font-size: 85px;
@@ -93,10 +96,16 @@ a {
   text-align: center;
   margin: 0;
   padding: 0; }
+  @media screen and (min-width: 0) and (max-width: 46.8125em) {
+    .landing-name {
+      font-size: 45px; } }
 
 .landing-title {
   font-size: 22px;
   text-align: center; }
+  @media screen and (min-width: 0) and (max-width: 46.8125em) {
+    .landing-title {
+      font-size: 18px; } }
 
 .landing-divider {
   border: solid 1px #454545;
@@ -111,6 +120,9 @@ a {
   margin-bottom: 45px;
   padding: 0 10px;
   max-width: 500px; }
+  @media screen and (min-width: 0) and (max-width: 46.8125em) {
+    .landing-description {
+      margin-bottom: 22.5px; } }
 
 .landing-links__container {
   display: flex; }
