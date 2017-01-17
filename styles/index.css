@@ -24,6 +24,20 @@ body {
   padding: 0; }
 
 /* =======================================================
+Setting header paddings
+======================================================= */
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0; }
+
+h4 {
+  font-size: 18px;
+  font-weight: lighter; }
+
+h6 {
+  font-weight: lighter; }
+
+/* =======================================================
 Utility classes
 ======================================================= */
 @media screen and (min-width: 0) and (max-width: 46.8125em) {
@@ -73,7 +87,9 @@ a {
   font-size: 85px;
   font-weight: bold;
   color: black;
-  text-align: center; }
+  text-align: center;
+  margin: 0;
+  padding: 0; }
 
 .landing-title {
   font-size: 22px;
@@ -102,9 +118,9 @@ Social Media Icons
 .social-icon {
   text-indent: -9999px;
   display: block;
-  margin: 0 30px;
-  width: 30px;
-  height: 30px;
+  margin: 0 10px;
+  width: 80px;
+  height: 80px;
   background-size: contain; }
 
 .resume-icon {
@@ -139,13 +155,13 @@ Project Container
   background-size: cover;
   background-position: center; }
   .project-container:hover .project-content {
-    display: block;
-    height: inherit;
     background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
     width: 100%;
     display: flex;
     flex-flow: column;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
 
 .project--sprout-background {
   background-image: url("../images/background/sprout_banner.jpg"); }
@@ -164,7 +180,6 @@ Project Container
 
 .project-name {
   font-size: 30px;
-  margin-top: 110px;
   font-weight: bold; }
 
 .project-secondary {
@@ -177,32 +192,113 @@ Project Container
   margin-top: 20px;
   margin-bottom: 22px; }
 
-.project-container button {
+.project-button {
   border: solid 2px #fff;
-  background-color: Transparent;
+  background-color: transparent;
   border-radius: 5px;
   box-shadow: none;
   cursor: pointer;
   color: #fff;
   font-size: 20px;
   outline: none;
+  text-align: center;
+  line-height: 40px;
   height: 40px;
   width: 140px; }
 
-.project-container button:hover {
+.project-button:hover {
   background-color: #fff; }
 
-.project--sprout-background button:hover {
+.project--sprout-background a:hover {
   color: #2ebe68; }
 
-.project--air_miles-background button:hover {
+.project--air_miles-background a:hover {
   color: #74cdef; }
 
-.project--ibm-background button:hover {
+.project--ibm-background a:hover {
   color: #1f57a4; }
 
-.project--go_green-background button:hover {
+.project--go_green-background a:hover {
   color: #f58c86; }
 
-.project--personal-background button:hover {
+.project--personal-background a:hover a:hover {
   color: #000; }
+
+/* =======================================================
+Secondary Pages
+======================================================= */
+.project-content--secondary {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center; }
+
+.project-container--secondary {
+  height: 350px; }
+
+.secondary--case-container {
+  width: 70%;
+  margin: 45px auto; }
+  .secondary--case-container li {
+    font-size: 16px;
+    color: #454545; }
+
+.secondary--subsection {
+  margin-top: 67.5px; }
+
+.secondary--subsection-header {
+  font-size: 36px; }
+
+.secondary--subsection-subhead {
+  color: #454545;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+  padding: 0; }
+
+.secondary--subsection-content {
+  font-size: 16px;
+  color: #454545; }
+
+.footer--navigation {
+  text-align: center;
+  margin: 45px auto; }
+
+.navigation--item {
+  font-size: 16px;
+  margin: 0 22.5px;
+  color: #f58c86; }
+  .navigation--item:hover {
+    color: #c9736e; }
+
+/* =======================================================
+Secondary Project Pages
+======================================================= */
+.project--sprout-secondary-bg {
+  background-image: url("../images/background/sprout_details.jpg"); }
+
+.project--sprout-header {
+  color: #2ebe68; }
+
+.project--am-secondary-bg {
+  background-image: url("../images/background/am_details.jpg"); }
+
+.project--am-header {
+  color: #74cdef; }
+
+.project--gg-secondary-bg {
+  background-image: url("../images/background/gg_details.jpg"); }
+
+.project--gg-header {
+  color: #f58c86; }
+
+.project--ibm-secondary-bg {
+  background-image: url("../images/background/ibm_details.jpg"); }
+
+.project--ibm-header {
+  color: #1f57a4; }
+
+.project--personal-secondary-bg {
+  background-image: url("../images/background/personal_details.jpg"); }
