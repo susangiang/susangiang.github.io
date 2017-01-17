@@ -64,6 +64,9 @@ Utility classes
   .display--tablet {
     display: none; } }
 
+.text-center {
+  text-align: center; }
+
 /* =======================================================
 Hero
 ======================================================= */
