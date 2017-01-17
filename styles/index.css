@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
 h4 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: lighter; }
 
 h6 {
@@ -182,7 +182,7 @@ Project Container
   background-image: url("../images/background/personal_banner.jpg"); }
 
 .project-name {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: bold; }
 
 .project-secondary {
