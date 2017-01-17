@@ -93,16 +93,10 @@ a {
   text-align: center;
   margin: 0;
   padding: 0; }
-  @media screen and (min-width: 0) and (max-width: 46.8125em) {
-    .landing-name {
-      font-size: 100px; } }
 
 .landing-title {
   font-size: 22px;
   text-align: center; }
-  @media screen and (min-width: 0) and (max-width: 46.8125em) {
-    .landing-title {
-      font-size: 30px; } }
 
 .landing-divider {
   border: solid 1px #454545;
