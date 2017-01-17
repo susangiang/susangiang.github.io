@@ -265,6 +265,10 @@ Secondary Pages
   font-size: 16px;
   color: #454545; }
 
+.secondary--image-asset {
+  width: 100%;
+  max-width: 900px; }
+
 .footer--navigation {
   text-align: center;
   margin: 45px auto; }
