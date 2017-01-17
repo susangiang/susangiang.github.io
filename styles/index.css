@@ -263,6 +263,7 @@ Project Container
 Secondary Pages
 ======================================================= */
 .project-content--secondary {
+  text-align: center;
   height: 100%;
   width: 100%;
   display: flex;
@@ -279,6 +280,9 @@ Secondary Pages
   .secondary--case-container li {
     font-size: 16px;
     color: #454545; }
+  @media screen and (min-width: 0) and (max-width: 46.8125em) {
+    .secondary--case-container {
+      width: 80%; } }
 
 .secondary--subsection {
   margin-top: 67.5px; }
