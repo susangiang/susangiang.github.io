@@ -81,7 +81,7 @@ a {
   display: flex;
   flex-flow: column;
   align-items: center;
-  margin: 160px 0; }
+  margin: 67.5px 0; }
 
 .landing-name {
   font-size: 85px;
@@ -221,7 +221,7 @@ Project Container
 .project--go_green-background a:hover {
   color: #f58c86; }
 
-.project--personal-background a:hover a:hover {
+.project--personal-background a:hover {
   color: #000; }
 
 /* =======================================================
