@@ -282,6 +282,9 @@ Secondary Pages
   flex-flow: column;
   align-items: center;
   justify-content: center; }
+  @media screen and (min-width: 0) and (max-width: 46.8125em) {
+    .secondary--case-container {
+      width: 90%; } }
 
 .project-container--secondary {
   height: 350px; }
