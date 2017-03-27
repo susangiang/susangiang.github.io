@@ -259,6 +259,9 @@ Project Container
 .project-button:hover {
   background-color: #fff; }
 
+.project--time-background a:hover {
+  color: #F0C78B; }
+
 .project--sprout-background a:hover {
   color: #2ebe68; }
 
@@ -338,13 +341,12 @@ Secondary Pages
 /* =======================================================
 Secondary Project Pages
 ======================================================= */
-
 .project--time-secondary-bg {
   background-image: url("../images/background/time_details.jpg"); }
 
-  .project--time-header {
-    color: #F0C78B;
-    margin-bottom: -10px; }
+.project--time-header {
+  color: #F0C78B;
+  margin-bottom: -10px; }
 
 .project--sprout-secondary-bg {
   background-image: url("../images/background/sprout_details.jpg"); }
@@ -376,3 +378,8 @@ Secondary Project Pages
 
 .project--personal-secondary-bg {
   background-image: url("../images/background/personal_details.jpg"); }
+
+.secondary--image-asset-time {
+  width: 75%;
+  margin: 0 auto;
+  display: block; }
