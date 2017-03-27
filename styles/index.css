@@ -108,7 +108,8 @@ a {
   color: #f58c86;
   text-align: center;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  margin-top: 20;}
   @media screen and (min-width: 0) and (max-width: 46.8125em) {
     .landing-title {
       font-size: 18px; } }
