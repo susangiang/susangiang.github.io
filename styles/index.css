@@ -206,6 +206,9 @@ Project Container
     .project-container {
       height: 500px; } }
 
+.project--time-background {
+  background-image: url("../images/background/time_banner.jpg"); }
+
 .project--sprout-background {
   background-image: url("../images/background/sprout_banner.jpg"); }
 
@@ -335,6 +338,14 @@ Secondary Pages
 /* =======================================================
 Secondary Project Pages
 ======================================================= */
+
+.project--time-secondary-bg {
+  background-image: url("../images/background/time_details.jpg"); }
+
+  .project--time-header {
+    color: #F0C78B;
+    margin-bottom: -10px; }
+
 .project--sprout-secondary-bg {
   background-image: url("../images/background/sprout_details.jpg"); }
 
