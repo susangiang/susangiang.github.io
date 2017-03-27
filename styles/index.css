@@ -5,14 +5,14 @@ Colors
 Font Face
 ======================================================= */
 @font-face {
-  font-family: 'Poppins';
+  font-family: 'Avenir';
   font-weight: bold;
-  src: url("fonts/Poppins-Bold.ttf"); }
+  src: url("fonts/avenir-next-bold.ttf"); }
 
 @font-face {
-  font-family: 'Poppins';
+  font-family: 'Avenir';
   font-weight: lighter;
-  src: url("fonts/Poppins-Light.ttf"); }
+  src: url("fonts/avenir-next-regular.ttf"); }
 
 /* =======================================================
 Global
@@ -282,10 +282,6 @@ Secondary Pages
   flex-flow: column;
   align-items: center;
   justify-content: center; }
-  @media screen and (min-width: 0) and (max-width: 46.8125em) {
-    .project-content--secondary {
-      margin: 0 auto;
-      width: 90%; } }
 
 .project-container--secondary {
   height: 350px; }
