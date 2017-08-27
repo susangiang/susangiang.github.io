@@ -7,12 +7,12 @@ Font Face
 @font-face {
   font-family: 'Avenir';
   font-weight: bold;
-  src: url("fonts/avenir-next-bold.ttf"); }
+  src: url("fonts/Avenir-Medium.ttf"); }
 
 @font-face {
   font-family: 'Avenir';
   font-weight: lighter;
-  src: url("fonts/avenir-next-regular.ttf"); }
+  src: url("fonts/Avenir-Book.ttf"); }
 
 /* =======================================================
 Global
@@ -82,49 +82,38 @@ a {
 
 .landing {
   color: #454545;
-  display: flex;
+  display: inline-block;
   flex-flow: column;
-  align-items: center;
-  margin: 67.5px 0; }
+  align-items: flex-start;
+  margin: 135px 150px 0 150px; }
   @media screen and (min-width: 0) and (max-width: 46.8125em) {
     .landing {
       margin: 45px 0; } }
 
 .landing-name {
-  font-size: 80px;
+  font-size: 36px;
   font-weight: bold;
-  color: black;
-  text-align: center;
+  color: #484848;
+  text-align: left;
   margin: 0;
-  padding: 0;
-  margin-bottom: -30px; }
+  padding: 0; }
   @media screen and (min-width: 0) and (max-width: 46.8125em) {
     .landing-name {
-      font-size: 40px;
-      margin-bottom: -10px; } }
-
-.landing-title {
-  font-size: 20px;
-  color: #f58c86;
-  text-align: center;
-  padding: 0;
-  margin-top: 20px;}
-  @media screen and (min-width: 0) and (max-width: 46.8125em) {
-    .landing-title {
-      font-size: 18px; } }
+      font-size: 36px;
+      margin: 10px 20px -10px 20px; } }
 
 .landing-divider {
-  border: solid 1px #454545;
-  width: 69px;
-  margin-top: 30px;
-  margin-bottom: 40px; }
+  border: solid 5px #AFD9E1;
+  width: 80px;
+  margin: 10px 0 40px 0px; }
+  @media screen and (min-width: 0) and (max-width: 46.8125em) {
+    .landing-divider {
+      margin-left: 20px; } }
 
 .landing-description {
-  text-align: center;
-  line-height: 1.4;
+  text-align: left;
+  line-height: 1.5;
   letter-spacing: 0.4px;
-  margin-bottom: 45px;
-  padding: 0 10px;
   max-width: 500px; }
   @media screen and (min-width: 0) and (max-width: 46.8125em) {
     .landing-description {
@@ -141,7 +130,7 @@ Social Media Icons
 .social-icon {
   text-indent: -9999px;
   display: block;
-  margin: 0 10px;
+  margin: 0 10px 0 -30px;
   width: 80px;
   height: 80px;
   background-size: contain; }
@@ -149,237 +138,20 @@ Social Media Icons
     .social-icon {
       display: inline-block;
       margin: 0 20px;
-      width: 30px;
+      width: 35px;
       height: 50px; } }
 
 .resume-icon {
-  background: url(../images/svg/resume.svg) no-repeat center; }
+  background: url(../images/svg/resume_dark.svg) no-repeat center; }
 
 .behance-icon {
-  background: url(../images/svg/behance.svg) no-repeat center; }
+  background: url(../images/svg/behance_dark.svg) no-repeat center; }
 
 .dribbble-icon {
-  background: url(../images/svg/dribbble.svg) no-repeat center; }
+  background: url(../images/svg/dribbble_dark.svg) no-repeat center; }
 
 .instagram-icon {
-  background: url(../images/svg/instagram.svg) no-repeat center; }
+  background: url(../images/svg/instagram_dark.svg) no-repeat center; }
 
 .linkedin-icon {
-  background: url(../images/svg/linkedin.svg) no-repeat center; }
-
-/* =======================================================
-Project Container
-======================================================= */
-.projects-container {
-  display: flex;
-  flex-flow: column; }
-
-.project-content {
-  display: none; }
-
-.project-container {
-  color: #fff;
-  background-repeat: no-repeat;
-  height: 350px;
-  background-size: cover;
-  background-position: center; }
-  @media screen and (min-width: 61.875em) {
-    .project-container:hover .project-content {
-      background-color: rgba(0, 0, 0, 0.5);
-      height: 100%;
-      width: 100%;
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-      justify-content: center; } }
-  @media screen and (min-width: 0) and (max-width: 61.8125em) {
-    .project-container .project-content {
-      text-align: center;
-      background-color: rgba(0, 0, 0, 0.5);
-      height: 100%;
-      width: 100%;
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-      justify-content: center; } }
-  @media screen and (min-width: 0) and (max-width: 46.8125em) {
-    .project-container {
-      height: 500px; } }
-
-.project--time-background {
-  background-image: url("../images/background/time_banner.jpg"); }
-
-.project--sprout-background {
-  background-image: url("../images/background/sprout_banner.jpg"); }
-
-.project--air_miles-background {
-  background-image: url("../images/background/air_miles_banner.jpg"); }
-
-.project--ibm-background {
-  background-image: url("../images/background/ibm_banner.jpg"); }
-
-.project--go_green-background {
-  background-image: url("../images/background/go_green_banner.jpg"); }
-
-.project--personal-background {
-  background-image: url("../images/background/personal_banner.jpg"); }
-
-.project-name {
-  font-size: 32px;
-  font-weight: bold; }
-
-.project-secondary {
-  font-size: 18px;
-  margin-bottom: 40px; }
-  @media screen and (min-width: 0) and (max-width: 46.8125em) {
-    .project-secondary {
-      margin-left: 15px;
-      margin-right: 15px; } }
-
-.project-divider {
-  border: solid 1px #fff;
-  width: 69px;
-  margin-top: 20px;
-  margin-bottom: 22px; }
-
-.project-button {
-  border: solid 2px #fff;
-  background-color: transparent;
-  border-radius: 5px;
-  box-shadow: none;
-  cursor: pointer;
-  color: #fff;
-  font-size: 20px;
-  outline: none;
-  text-align: center;
-  line-height: 40px;
-  height: 40px;
-  width: 140px; }
-
-.project-button:hover {
-  background-color: #fff; }
-
-.project--time-background a:hover {
-  color: #F0C78B; }
-
-.project--sprout-background a:hover {
-  color: #2ebe68; }
-
-.project--air_miles-background a:hover {
-  color: #74cdef; }
-
-.project--ibm-background a:hover {
-  color: #1f57a4; }
-
-.project--go_green-background a:hover {
-  color: #f58c86; }
-
-.project--personal-background a:hover {
-  color: #000; }
-
-/* =======================================================
-Secondary Pages
-======================================================= */
-.project-content--secondary {
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center; }
-
-.project-container--secondary {
-  height: 350px; }
-
-.secondary--case-container {
-  width: 70%;
-  margin: 45px auto; }
-  .secondary--case-container li {
-    font-size: 16px;
-    color: #454545; }
-  @media screen and (min-width: 0) and (max-width: 46.8125em) {
-    .secondary--case-container {
-      width: 80%; } }
-
-.secondary--subsection {
-  margin-top: 67.5px; }
-
-.secondary--subsection-header {
-  font-size: 36px; }
-
-.secondary--subsection-subhead {
-  color: #454545;
-  font-weight: bold;
-  font-size: 16px;
-  margin: 0;
-  padding: 0; }
-
-.secondary--subsection-content {
-  font-size: 16px;
-  color: #454545; }
-
-.secondary--caption-content {
-  font-size: 13px;
-  color: #454545; }
-
-.secondary--image-asset {
-  width: 100%;
-  max-width: 900px; }
-
-.footer--navigation {
-  text-align: center;
-  margin: 45px auto; }
-
-.navigation--item {
-  font-size: 16px;
-  margin: 0 22.5px;
-  color: #f58c86; }
-  .navigation--item:hover {
-    color: #c9736e; }
-
-/* =======================================================
-Secondary Project Pages
-======================================================= */
-.project--time-secondary-bg {
-  background-image: url("../images/background/time_details.jpg"); }
-
-.project--time-header {
-  color: #F0C78B;
-  margin-bottom: -10px; }
-
-.project--sprout-secondary-bg {
-  background-image: url("../images/background/sprout_details.jpg"); }
-
-.project--sprout-header {
-  color: #2ebe68;
-  margin-bottom: -10px; }
-
-.project--am-secondary-bg {
-  background-image: url("../images/background/am_details.jpg"); }
-
-.project--am-header {
-  color: #74cdef;
-  margin-bottom: -10px; }
-
-.project--gg-secondary-bg {
-  background-image: url("../images/background/gg_details.jpg"); }
-
-.project--gg-header {
-  color: #f58c86;
-  margin-bottom: -10px; }
-
-.project--ibm-secondary-bg {
-  background-image: url("../images/background/ibm_details.jpg"); }
-
-.project--ibm-header {
-  color: #1f57a4;
-  margin-bottom: -10px; }
-
-.project--personal-secondary-bg {
-  background-image: url("../images/background/personal_details.jpg"); }
-
-.secondary--image-asset-time {
-  width: 75%;
-  margin: 0 auto;
-  display: block; }
+  background: url(../images/svg/linkedin_dark.svg) no-repeat center; }
