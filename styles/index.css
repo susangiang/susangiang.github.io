@@ -34,7 +34,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h4 {
   font-size: 16px;
-  font-weight: lighter; }
+  font-weight: bold;
+  color: #222; }
 
 h6 {
   font-weight: lighter; }
@@ -97,7 +98,8 @@ END
   letter-spacing: 1px;
   line-height: 1.8;
   margin-bottom: 60px;
-  position: relative; }
+  position: relative;
+  color: #222; }
   .introduction__name::before {
     content: '';
     position: absolute;
@@ -167,12 +169,14 @@ END
       margin-right: 45px; } }
 
 .project__heading {
+  padding-top: 10px;
   line-height: 1.5;
   font-size: 16px;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  color: #222; }
 
 .project__description {
-  color: #858585;
+  color: #484848;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 1px; }
@@ -218,20 +222,30 @@ Secondary Pages
       max-width: 700px;
       margin: 40px auto; } }
 
+.project-name {
+  color: #222; }
+
 .project__subhead {
-  font-size: 18px;
+  font-size: 26px;
   font-weight: bold;
-  margin-top: 25px; }
+  margin-top: 35px;
+  color: #222; }
+
+.project__subhead__description {
+  margin: -5px 0 30px 0;
+  font-size: 16px; }
 
 .project-body {
   font-size: 16px;
   letter-spacing: 0.5px; }
 
-.lessons__element {
+.lessons__element,
+.solution__element {
   margin-top: 40px;
   margin: 40px auto; }
   @media screen and (min-width: 46.875em) {
-    .lessons__element {
+    .lessons__element,
+    .solution__element {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
@@ -239,9 +253,40 @@ Secondary Pages
       -webkit-flex-direction: row;
       -webkit-justify-content: flex-end; } }
 
+@media screen and (min-width: 0) and (max-width: 61.8125em) {
+  .solution__element {
+    text-align: center; } }
+
 @media screen and (min-width: 0) and (max-width: 46.8125em) {
-  .subsection-image {
-    margin-bottom: 15px; } }
+  .section {
+    margin-left: 25px;
+    margin-right: 25px; } }
+
+@media screen and (min-width: 46.875em) and (max-width: 61.8125em) {
+  .section {
+    margin-left: 45px;
+    margin-right: 45px; } }
+
+@media screen and (min-width: 61.875em) {
+  .subsection-body {
+    margin-left: 25px;
+    margin-right: 25px; } }
+
+@media screen and (min-width: 46.875em) and (max-width: 61.8125em) {
+  .subsection-body {
+    margin-left: 45px;
+    margin-right: 45px; } }
+
+.subsection-image {
+  width: 330px;
+  height: 330px; }
+  @media screen and (min-width: 0) and (max-width: 46.8125em) {
+    .subsection-image {
+      margin-bottom: 15px; } }
+  @media screen and (min-width: 46.875em) and (max-width: 61.8125em) {
+    .subsection-image {
+      width: 250px;
+      height: 250px; } }
 
 .subsection-body {
   text-align: left; }
@@ -249,14 +294,40 @@ Secondary Pages
     .subsection-body {
       display: flex;
       justify-content: center;
-      flex-direction: column;
-      padding-left: 30px; } }
+      flex-direction: column; } }
+  @media screen and (min-width: 61.875em) {
+    .subsection-body {
+      margin-left: 25px;
+      margin-right: 25px; } }
+  @media screen and (min-width: 46.875em) and (max-width: 61.8125em) {
+    .subsection-body {
+      margin-left: 45px;
+      margin-right: 45px; } }
   .subsection-body h4 {
+    color: #222;
     font-weight: bold; }
 
-.subsection-image {
-  width: 330px;
-  height: 330px; }
+@media screen and (min-width: 0) and (max-width: 46.8125em) {
+  .subsection__image--mockup {
+    margin-bottom: 15px; } }
+
+.subsection__image--full-width {
+  width: 100%; }
+
+.subsection__image--half-width {
+  width: 50px; }
+
+.subsection__image--mockup {
+  height: 500px; }
+  @media screen and (min-width: 0) and (max-width: 46.8125em) {
+    .subsection__image--mockup {
+      text-align: centre; } }
+  @media screen and (min-width: 46.875em) and (max-width: 61.8125em) {
+    .subsection__image--mockup {
+      text-align: centre; } }
+
+.subsection--caption-content {
+  font-size: 13px; }
 
 .footer__container {
   margin: 40px 0;
