@@ -388,9 +388,14 @@ Secondary Pages
   }
 }
 
-.subsection-image {
+.subsection-image-container {
   width: 330px;
   height: 330px;
+}
+
+.subsection-image {
+  width: 100%;
+  height: 100%;
   @include breakpoint($mobile) {
     margin-bottom: 15px;
   }
