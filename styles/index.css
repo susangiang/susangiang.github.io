@@ -41,8 +41,11 @@ h6 {
   font-weight: lighter; }
 
 a.email {
-  color: #484848;
-  text-decoration: underline; }
+  color: #484848; }
+  a.email:visited {
+    color: #484848; }
+  a.email:hover {
+    color: rgba(72, 72, 72, 0.8); }
 
 /* =======================================================
 Utility classes
@@ -225,6 +228,10 @@ Secondary Pages
 .project-name {
   color: #222; }
 
+.project__page--description {
+  font-weight: normal;
+  margin-top: -5px; }
+
 .project__subhead {
   font-size: 26px;
   font-weight: bold;
@@ -314,20 +321,24 @@ Secondary Pages
 .subsection__image--full-width {
   width: 100%; }
 
-.subsection__image--half-width {
-  width: 50px; }
+.subsection__image--smaller-width {
+  width: 70%; }
 
 .subsection__image--mockup {
   height: 500px; }
   @media screen and (min-width: 0) and (max-width: 46.8125em) {
     .subsection__image--mockup {
-      text-align: centre; } }
+      text-align: center; } }
   @media screen and (min-width: 46.875em) and (max-width: 61.8125em) {
     .subsection__image--mockup {
-      text-align: centre; } }
+      text-align: center; } }
 
 .subsection--caption-content {
-  font-size: 13px; }
+  font-size: 13px;
+  margin-bottom: 20px; }
+
+.error_container {
+  text-align: center; }
 
 .footer__container {
   margin: 40px 0;

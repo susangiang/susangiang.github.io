@@ -1,0 +1,473 @@
+@import 'addons/breakpoint';
+
+$wide: 'screen' 90.000em;
+$desktop: 'screen' 61.875em;
+$tablet: 'screen' 46.875em 61.8125em;
+$tablet-up: 'screen' 46.875em;
+$tablet-down: 'screen' 0 61.8125em;
+$mobile: 'screen' 0 46.8125em;
+
+$gutter: 30px;
+$font--content-font: 16px;
+$font--caption-font: 13px;
+
+/* =======================================================
+Colors
+======================================================= */
+
+$color-primary: #AFD9E1;
+$color-white: #fff;
+$color-black: #222;
+$color-dark-grey: #484848;
+
+/* =======================================================
+Font Face
+======================================================= */
+
+@font-face {
+  font-family: 'Avenir';
+  font-weight: bold;
+  src: url('fonts/Avenir-Heavy.ttf');
+}
+
+@font-face {
+  font-family: 'Avenir';
+  font-weight: lighter;
+  src: url('fonts/Avenir-Book.ttf');
+}
+
+/* =======================================================
+Global
+======================================================= */
+
+body {
+  font-family: 'Avenir';
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: $color-dark-grey;
+}
+
+/* =======================================================
+Setting header paddings
+======================================================= */
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+h4 {
+  font-size: $font--content-font;
+  font-weight: bold;
+  color: $color-black;
+}
+
+h6 {
+  font-weight: lighter;
+}
+
+a.email {
+  color: $color-dark-grey;
+
+  &:visited {
+    color: $color-dark-grey;
+  }
+
+  &:hover {
+    color: rgba($color-dark-grey, 0.8);
+  }
+}
+
+/* =======================================================
+Utility classes
+======================================================= */
+
+.hide--mobile {
+  @include breakpoint($mobile) {
+    display: none;
+  }
+}
+
+.hide--tablet {
+  @include breakpoint($tablet) {
+    display: none;
+  }
+}
+
+.hide--desktop {
+  @include breakpoint($desktop) {
+    display: none;
+  }
+}
+
+.display--mobile {
+  @include breakpoint($tablet-up) {
+    display: none;
+  }
+}
+
+.display--tablet {
+  @include breakpoint($desktop) {
+    display: none;
+  }
+
+  @include breakpoint($mobile) {
+    display: none;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* =======================================================
+END
+======================================================= */
+
+.portfolio__container {
+  max-width: 80%;
+  margin: 50px auto;
+
+  @include breakpoint($desktop) {
+    max-width: 1000px;
+    margin: 150px auto;
+  }
+
+  @include breakpoint($tablet) {
+    max-width: 750px;
+    margin: 150px auto;
+  }
+}
+
+.introduction {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.introduction__name {
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  margin-bottom: $gutter * 2;
+  position: relative;
+  color: $color-black;
+
+  &::before {
+    content: '';
+    position: absolute;
+    border: 4px solid $color-primary;
+    width: 77px;
+    top: 55px;
+  }
+}
+
+.introduction__content {
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.introduction__content a {
+  color: $color-dark-grey;
+
+  &:visited {
+    color: $color-dark-grey;
+  }
+
+  &:hover {
+    color: rgba($color-dark-grey, 0.8);
+  }
+}
+
+.social__channel-icon {
+  text-indent: -9999px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+
+  @include breakpoint($mobile) {
+    display: inline-block;
+    margin: 0 20px;
+    width: 35px;
+    height: 50px;
+  }
+}
+
+.social__resume {
+  background: url("../images/svg/resume.svg") no-repeat center;
+}
+
+.social__linkedin {
+  background: url("../images/svg/linkedin.svg") no-repeat center;
+}
+
+.social__dribbble {
+  background: url("../images/svg/dribbble.svg") no-repeat center;
+}
+
+.social__instagram {
+  background: url("../images/svg/instagram.svg") no-repeat center;
+}
+
+.social-wrapper {
+  margin-left: 13px;
+  margin-bottom: 80px;
+}
+
+.project__wrapper {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.project__element {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  text-align: center;
+
+  @include breakpoint($tablet-up) {
+    text-align: left;
+  }
+
+  @include breakpoint($desktop) {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  @include breakpoint($tablet) {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+}
+
+.project__heading {
+  padding-top: 10px;
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: $color-black;
+}
+
+.project__description {
+  color: $color-dark-grey;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.project__image {
+  width: 90%;
+  min-width: 260px;
+  min-height: 180px;
+
+  border-radius: 5px;
+
+  @include breakpoint($tablet-up) {
+    width: 280px;
+    height: 200px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.02);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+  }
+}
+
+
+/* =======================================================
+Secondary Pages
+======================================================= */
+
+.navigation-container {
+  text-align: center;
+  margin: 20px auto;
+
+  @include breakpoint($tablet-up) {
+    margin: 60px auto;
+  }
+}
+
+.navigation__item {
+  text-decoration: none;
+  color: $color-dark-grey;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+
+  &:hover {
+    color: rgba(72, 72, 72, 0.8);
+  }
+}
+
+.project-content .container {
+  max-width: 400px;
+  margin: 20px auto;
+
+  @include breakpoint($tablet-up) {
+    max-width: 700px;
+    margin: 40px auto;
+  }
+  line-height: 1.5;
+}
+
+.project-name {
+  color: $color-black;
+}
+
+.project__page--description {
+  font-weight: normal;
+  margin-top: -5px;
+}
+
+.project__subhead {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 35px;
+  color: $color-black;
+}
+
+.project__subhead__description {
+  margin: -5px 0 30px 0;
+  font-size: 16px;
+}
+
+.project-body {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+
+.lessons__element,
+.solution__element {
+  margin-top: 40px;
+  margin: 40px auto;
+
+  @include breakpoint($tablet-up) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: flex-end;
+  }
+}
+
+.solution__element {
+
+  @include breakpoint($tablet-down) {
+    text-align: center;
+  }
+}
+
+.section {
+  @include breakpoint($mobile) {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  @include breakpoint($tablet) {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+}
+
+.subsection-body {
+  @include breakpoint($desktop) {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  @include breakpoint($tablet) {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+}
+
+.subsection-image {
+  width: 330px;
+  height: 330px;
+  @include breakpoint($mobile) {
+    margin-bottom: 15px;
+  }
+
+  @include breakpoint($tablet) {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.subsection-body {
+  text-align: left;
+
+  @include breakpoint($tablet-up) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  @include breakpoint($desktop) {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  @include breakpoint($tablet) {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+
+  h4 {
+    color: $color-black;
+    font-weight: bold;
+  }
+}
+
+.subsection__image--mockup {
+
+  @include breakpoint($mobile) {
+    margin-bottom: 15px;
+  }
+}
+
+.subsection__image--full-width {
+  width: 100%;
+}
+
+.subsection__image--smaller-width {
+  width: 70%;
+}
+
+.subsection__image--mockup {
+  height: 500px;
+
+  @include breakpoint($mobile) {
+    text-align: center;
+  }
+
+  @include breakpoint($tablet) {
+    text-align: center;
+  }
+}
+
+.subsection--caption-content {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.error_container {
+  text-align: center;
+}
+
+.footer__container {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.footer__item {
+  display: inline-block;
+  margin: 0 40px;
+}
