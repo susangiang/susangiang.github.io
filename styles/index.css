@@ -284,6 +284,10 @@ Secondary Pages
     margin-left: 45px;
     margin-right: 45px; } }
 
+.subsection__image--container {
+  width: 330px;
+  height: 330px; }
+
 .subsection-image {
   width: 330px;
   height: 330px; }
