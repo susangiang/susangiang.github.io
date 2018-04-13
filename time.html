@@ -26,9 +26,10 @@
               that tackle low productivity (such as pomodoro cycle trackers and sleep trackers)
               is that they make the assumption that aforementioned factors are independent variables.
               This is often not the case, as all of these factors contribute to one's overall
-              performance during the day. Therefore, further exploration of how to better represent
-              the impacts of the factors in everyday life on productivity was needed.
+              performance during the day.
             </p>
+            <p><b>💡Opportunity</b>: How might we improve the productivity of individuals by providing meaningful
+              insights into their typical workflows and promoting data-driven decision making?</p>
             <h4 class="project__subhead">Role and Tools</h4>
             <p>This is a personal project that I did independently – I carried out all aspects of the
               projects, from the research phase to the final design.
@@ -54,10 +55,17 @@
             <p>From the interviews, it was identified that their biggest pain points were:
             <ul>
               <li>Having to balance between large amount of tasks to do for the day</li>
-              <li>Determining what best works for them on a given day, as their overall
-                productivity is influenced by many factors (amount of sleep and mood, to name a few)</li>
+              <li>Determining what best works for them on a given day</li>
               <li>Spending excessive amounts of time during the day on distractions, as attributed by
                 social media and easily accessible distracting devices</li>
+            </ul>
+            </p>
+
+            <p>Observations made:
+            <ul>
+              <li>Preferred to use their laptops when studying</li>
+              <li>Most preferred to use their mobile devices during breaks</li>
+              <li>Poor self awareness of mental well-being</li>
             </ul>
             </p>
 
@@ -68,10 +76,82 @@
               <img class="subsection__image--full-width" src="../images/assets/time/time_persona_student.jpg">
               <p class="subsection--caption-content text-center">Empathy map for Leah, a university student</p>
 
+              <p><b>The University Student, Leah</b>
+              <ul>
+                <li>Always on the go</li>
+                <li>Often overwhelmed with the workload</li>
+                <li>Stressed, uses social media as an outlet</li>
+                <li>Easily distracted</li>
+                <li>Inefficient studying; plays by ear often</li>
+              </ul>
+              </p>
+
+              <p>With this persona in mind, I came up with a list of user goals.</p>
+              <p><b>As a user, I want to:</b>
+                <ul>
+                  <li>Ensure I am getting the sleep I need</li>
+                  <li>Know what my time is being spent on, whether it be on distractions or tasks</li>
+                  <li>Increase my self awareness and look after my mental health</li>
+                  <li>Learn to prioritize to avoid being overwhelmed</li>
+                  <li>Focus on the task at hand and study without disruptions</li>
+                </ul>
+              </p>
+
+          <h4 class="project__subhead">Options Considered</h4>
+          <p>For the next step, I began to brainstorm the various forms that this solution could come in and
+            listed out the pros and cons of each option. Options considered include a Google Chrome extension, a desktop app,
+            a mobile app, and lastly a mobile app + Google Chrome extension duo.
+          </p>
+          <p>In the end, I chose the last option (mobile app + Google Chrome extension duo) because it was the most appropriate
+            for the target users. Based on the interviews conducted, it was validated that university students use both their
+            laptops and mobile devices for roughly the same amount of time, but for different purposes. Students preferred to
+            use their laptops during studying because of the larger screens and faster access to information. However, students
+            would switch to using their mobile devices during breaks, as they are more portable and can be used as the students
+            go on a quick stroll. For that reason, it was determined that using both a mobile app and Chrome extension would be
+            most accurate in recording the amount of time spent on distractions and tasks, given the two scenarios. The mobile
+            app would also be able to capture time spent on apps that are not available on desktops, such as Snapchat.
+          </p>
+
+          <h4 class="project__subhead">Workflow</h4>
+          <p>Due to time constraints, I decided to focus on the mobile experience and created a draft of what the experience would
+            look like. This allowed me to get a high level overview of the app features and also helped with determining the
+            information hierarchy.
+          </p>
+
+          <img class="subsection__image--full-width" src="../images/assets/time/workflow_time.png">
+          <p class="subsection--caption-content text-center">App workflow</p>
+
+          <h4 class="project__subhead">Initial Wireframes</h4>
+          <p>Next, I dived straight into sketching some initial wireframes for what the core features would look like. I explored
+            with different input types, design patterns, and data visualizations.
+          </p>
+
+          <img class="subsection__image--full-width" src="../images/assets/time/time_wireframes.png">
+          <p class="subsection--caption-content text-center">Initial wireframes</p>
+
+          <h4 class="project__subhead">Prototyping & Testing</h4>
+          <p>After some refinement, I created medium-fidelity mockups for the end-to-end experience of the solution and prototyped
+            it on InVision (<a href="https://invis.io/Y6FZO7EUVA5#/280882735_Splash_-_Value_Prop_1">view prototype here</a>). I used
+            this prototype to conduct user testing with several fellow classmates and recorded their feedback and thoughts as they
+            navigated about the app.
+          </p>
+          <p>Some sections of the app, such as the <i>Insights</i> screen, were intentionally left blank; this was so that when users
+            landed on said sections, I would take the opportunity to ask the users what they expected to see. This was especially
+            helpful for determining the best way to visualize the users' data on the <i>Insights</i> screen.
+
+          <p><b>Some feedback that I received were:</b>
+            <ul>
+              <li>"Account setup is lengthy. Do I have to configure my settings?</li>
+              <li>"I don't want to do this right now but I also can't seem to skip this"</li>
+              <li>"I want to be able to see how today's progress differs from yesterday's and the day before"</li>
+              <li>"I would like to see my progress over a long period of time, like a month"</li>
+            </ul>
+          </p>
+
           <h4 class="project__subhead">The Solution</h4>
           <h4 class="project__subhead__description">Allowing students to build habits, prioritize tasks, and make data-driven lifestyle changes </h4>
-            <p>The resulting design was a mobile app that collects, monitors, and tracks user behaviours
-              and provides weekly insights that encourages positive lifestyle changes moving forward.
+            <p>After iterating based on the feedback received, the resulting design was a mobile app that
+              collects, monitors, and tracks user behaviours. It also provides weekly insights that encourages positive lifestyle changes moving forward.
             </p>
 
             <div class="solutions__container">
@@ -110,7 +190,8 @@
                     insights as inferred by the student’s habits and internet usage is presented.
                     This allows students to be aware of and recognize the best conditions in which
                     they work most effectively in, where this newfound knowledge can be used to adopt
-                    better habits for the week to come.
+                    better habits for the week to come. An interactive graph displaying the student's progress
+                    for the last week is also shown for easy comparison.
                   </p>
                 </div>
               </div>
@@ -123,6 +204,23 @@
             </p>
             <img class="subsection__image--full-width" src="../images/assets/time/time_landing_page.jpg">
             <p class="subsection--caption-content text-center">Landing page design exercise</p>
+
+            <h4 class="project__subhead">Next Steps</h4>
+              <p>Looking back, there are several changes that I would make to improve the mobile experience:
+              </p>
+              <ul>
+                <li><b>Passive, rather than reactive.</b> The solution takes a more passive approach in the sense that it may still be unclear what students can do next to improve
+                their productivity. A possible solution to address this may be providing students with personalized and actionable tips
+                pertaining to their specific habits that they may adopt moving forward.</li>
+                <li><b>Moods are subjective.</b> As a predefined mood is assigned to every numerical value on the linear scale on the Mood prompt, users
+                may not necessarily agree with the assignments, resulting in skewed responses. To address this, I would remove the predefined moods
+                and provide users the option of adding a personal note each time they rate their mood. That way, there is context into why they are
+                feeling the way they are at a point in time.</li>
+                <li><b>Lack of long term insights.</b> Currently, students can only see their progress over the last week. As noted during user testing,
+                having the ability to observe how the user's progress has evolved over a longer period of time is essential in the development of
+                long term habits. To address this, I would do further exploration into how users can check their progress for the long term</li>
+              <p>Lastly, the next step is the design of the Chrome extension and envisioning how that experience would look like.
+              </p>
       </div>
       <div class="footer__container">
         <a href="/symbility.html" class="navigation__item footer__item">Previous Project</a>
@@ -132,12 +230,14 @@
   </div>
   </body>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108480684-1"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    gtag('config', 'UA-108480684-1');
+    ga('create', 'UA-90480192-1', 'auto');
+    ga('send', 'pageview');
+
   </script>
 </html>
