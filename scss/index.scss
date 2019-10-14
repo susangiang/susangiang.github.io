@@ -58,6 +58,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+h1 {
+  font-size: 42px;
+}
+
 h4 {
   font-size: $font--content-font;
   font-weight: bold;
@@ -128,7 +132,7 @@ END
 ======================================================= */
 
 .portfolio__container {
-  max-width: 80%;
+  max-width: 90%;
   margin: 50px auto;
 
   @include breakpoint($desktop) {
@@ -145,6 +149,10 @@ END
 .introduction {
   margin-left: 25px;
   margin-right: 25px;
+
+  @include breakpoint($tablet-down) {
+    margin-top: 100px;
+  }
 }
 
 .introduction__name {
@@ -154,14 +162,6 @@ END
   margin-bottom: 10px;
   position: relative;
   color: $color-black;
-
-  /*&::before {
-    content: '';
-    position: absolute;
-    border: 4px solid $color-primary;
-    width: 77px;
-    top: 55px;
-  }*/
 }
 
 .introduction__content {
@@ -192,11 +192,16 @@ END
     margin: 0 20px;
     width: 35px;
     height: 50px;
+
   }
 }
 
 .social__resume {
   background: url("../images/svg/resume.svg") no-repeat center;
+
+  @include breakpoint($mobile) {
+    margin-left: 0;
+  }
 }
 
 .social__linkedin {
@@ -214,7 +219,11 @@ END
 .social-wrapper {
   margin-left: 13px;
   margin-bottom: 80px;
-  margin-top: 60px;
+  margin-top: 80px;
+
+  @include breakpoint($mobile) {
+    margin-top: 80px;
+  }
 }
 
 .project__wrapper {
@@ -306,7 +315,7 @@ Secondary Pages
 }
 
 .project-content .container {
-  max-width: 400px;
+  max-width: 450px;
   margin: 20px auto;
 
   @include breakpoint($tablet-up) {
@@ -470,7 +479,7 @@ Secondary Pages
 }
 
 .footer__container {
-  margin: 40px 0;
+  margin: 60px 0;
   text-align: center;
 }
 
