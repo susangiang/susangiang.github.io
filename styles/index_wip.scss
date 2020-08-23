@@ -156,6 +156,10 @@ Main styling
   margin: 0 auto;
 
   @include breakpoint($desktop) {
+    width: 66%;
+  }
+
+  @include breakpoint($tablet) {
     width: 70%;
   }
 }
@@ -271,7 +275,10 @@ Main styling
 
 .project__item-heading {
   font-size: 32px;
-  max-width: 500px;
+
+  @include breakpoint($tablet-down) {
+    max-width: 500px;
+  }
 }
 
 .project__item-content {
