@@ -1,0 +1,217 @@
+// Scss
+@import 'addons/breakpoint';
+
+$wide: 'screen' 90.000em;
+$desktop: 'screen' 55.875em;
+$tablet: 'screen' 46.875em 55.8125em;
+$tablet-up: 'screen' 46.875em;
+$tablet-down: 'screen' 0 55.8125em;
+$mobile: 'screen' 0 46.8125em;
+
+$gutter: 30px;
+$font--content-font: 16px;
+$font--caption-font: 13px;
+
+/* =======================================================
+Colors
+======================================================= */
+
+$color-primary: #E67D9A;
+$color-white: #fff;
+$color-black: #222;
+$color-dark-grey: #4285F4;
+$color-navy: #1E2B44;
+
+/* =======================================================
+Font Face
+======================================================= */
+
+@font-face {
+  font-family: 'Avenir';
+  font-weight: bold;
+  src: url('fonts/Avenir-Heavy.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  font-weight: lighter;
+  src: url('fonts/Avenir-Book.ttf');
+  font-display: swap;
+}
+
+/* =======================================================
+Global
+======================================================= */
+
+body {
+  font-family: 'Avenir';
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: $color-navy;
+}
+
+/* =======================================================
+Setting header paddings
+======================================================= */
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 65px;
+}
+
+h4 {
+  font-size: $font--content-font;
+  font-weight: bold;
+  color: $color-black;
+  margin-top: 10px;
+}
+
+h6 {
+  font-weight: lighter;
+}
+
+a.email {
+  color: $color-dark-grey;
+
+  &:visited {
+    color: $color-dark-grey;
+  }
+
+  &:hover {
+    color: rgba($color-dark-grey, 0.8);
+  }
+}
+
+/* =======================================================
+Utility classes
+======================================================= */
+
+.hide--mobile {
+  @include breakpoint($mobile) {
+    display: none;
+  }
+}
+
+.hide--tablet {
+  @include breakpoint($tablet) {
+    display: none;
+  }
+}
+
+.hide--desktop {
+  @include breakpoint($desktop) {
+    display: none;
+  }
+}
+
+.display--mobile {
+  @include breakpoint($tablet-up) {
+    display: none;
+  }
+}
+
+.display--tablet {
+  @include breakpoint($desktop) {
+    display: none;
+  }
+
+  @include breakpoint($mobile) {
+    display: none;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.color-primary {
+  color: $color-primary;
+}
+
+.visuallyhidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* =======================================================
+END
+======================================================= */
+
+/* =======================================================
+Main styling
+======================================================= */
+
+.content-container {
+  width: 90%;
+  margin: 0 auto;
+
+  @include breakpoint($desktop) {
+    width: 66%;
+  }
+
+  @include breakpoint($tablet) {
+    width: 70%;
+  }
+}
+
+.section {
+  margin-bottom: 200px;
+  color: $color-white;
+}
+
+.main-nav {
+  margin-top: 30px;
+  margin-bottom: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__list {
+  padding: 0;
+}
+
+.main-nav__list-item {
+  list-style: none;
+  display: inline-block;
+}
+
+.main-nav__list--left {
+  .main-nav__list-item {
+    margin-left: 0px;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.main-nav__list--right {
+  .main-nav__list-item {
+    margin-left: 30px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.main-nav__list-item-link {
+  color: $color-white;
+  text-decoration: none;
+  font-size: 18px;
+
+  &:hover,
+  &:focus {
+    color: $color-primary;
+  }
+}
