@@ -30,12 +30,14 @@ Font Face
   font-family: 'Avenir';
   font-weight: bold;
   src: url('fonts/Avenir-Heavy.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Avenir';
   font-weight: lighter;
   src: url('fonts/Avenir-Book.ttf');
+  font-display: swap;
 }
 
 /* =======================================================
