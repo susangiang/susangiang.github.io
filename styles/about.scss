@@ -215,3 +215,55 @@ Main styling
     color: $color-primary;
   }
 }
+
+.onion-skin {
+  text-align: center;
+}
+
+.onion-skin__slider {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  margin-bottom: 100px;
+}
+
+.onion-skin__slider > div {
+  position: absolute;
+  top: 0;
+  bottom: -30px;
+  left: 0;
+  width: 530px;
+  max-width: 100%;
+  overflow: hidden;
+  resize: horizontal;
+  border-right: 5px solid white;
+}
+
+.onion-skin__slider > div:before {
+  content: '';
+  position: absolute;
+  z-index: 1000;
+  right: 0;
+  bottom: 0;
+  width: 13px;
+  height: 13px;
+  padding: 5px;
+  background: linear-gradient(-45deg, white 50%, transparent 0);
+  background-clip: content-box;
+  cursor: ew-resize;
+  -webkit-filter: drop-shadow(0 0 2px black);
+  filter: drop-shadow(0 0 2px black);
+}
+
+.onion-skin__slider img {
+  user-select: none;
+  max-width: 1000px;
+}
+
+.about__container {
+  text-align: left;
+}
+
+.about__content {
+  font-size: 18px;
+}
