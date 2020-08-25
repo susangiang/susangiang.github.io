@@ -166,7 +166,7 @@ Main styling
   margin: 0 auto;
 
   @include breakpoint($desktop) {
-    width: 66%;
+    width: 55%;
   }
 
   @include breakpoint($tablet) {
