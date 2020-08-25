@@ -280,6 +280,11 @@ Main styling
 
 .about__heading {
   margin-bottom: 60px;
+  line-height: 1.4;
+
+  @include breakpoint($mobile) {
+    line-height: 1.2;
+  }
 }
 
 .about__content {
